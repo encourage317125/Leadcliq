@@ -1,0 +1,53 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"require": {
+		"laravel/framework": "4.1.*",
+		"cartalyst/sentry": "2.0.*",
+        "mandrill/mandrill": "1.0.*",
+        "anahkiasen/former": "dev-master",
+        "intervention/image": "dev-master",
+        "christiaan/zohocrmclient": "1.0.*@dev",
+        "itsgoingd/clockwork": "dev-master",
+        "fzaninotto/faker": "1.3.*@dev",
+        "balanced/balanced":  "1.*",
+		"phayes/geophp": "dev-master",
+        "way/generators": "2.*"
+    },
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",			
+			"app/composers",
+			"app/models",
+			"app/repositories",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php",
+			"app/LeadCliqServiceProvider.php"
+		],
+		"psr-0": {
+		    "Leadcliq" : "app/libraries"
+		}
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan migrate",
+			"php artisan db:seed"
+        ],
+		"pre-update-cmd": [
+		],
+		"post-update-cmd": [
+            "php artisan market:test"
+        ],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist",
+        "process-timeout": 3000
+	},
+	"minimum-stability": "dev"
+}

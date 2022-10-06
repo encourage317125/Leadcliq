@@ -1,0 +1,330 @@
+body{
+	background-image: url('/images/html-bg.jpg');
+	color:#878787;
+}
+
+.content-wrap{
+    background-color:#333;
+}
+
+.top-bar{
+    margin-top:20px;
+}
+
+.top-bar h2{
+    color:white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	color: #444444;
+}
+
+.profile-modal,
+.modal-shadow{
+	min-height: 100px;
+}
+.modal-box{
+	padding: 0;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+}
+.modal-box.modal-box-2{
+	padding-bottom: 2px;
+	border-bottom: 1px solid #ddd;
+}
+
+.modal-box-shadow{
+	padding-bottom: 2px;
+	border: none;
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+       -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+.profile-modal-header{
+	border-bottom: 1px dashed #eee;
+}
+.profile-modal-header-title{
+	margin:0;
+	padding: 18px 40px;
+	font-size: 18px;
+	line-height: 18px;
+}
+.profile-modal-header-title .title-step{
+	padding-right: 10px;
+	font-weight: bold;
+	color: #66BE19;
+}
+.profile-modal-body{
+	margin: 30px 100px;
+	min-height: 400px;
+}
+.profile-modal-footer{
+	padding: 20px;
+	border-top: 1px dashed #eee;
+}
+.profile-modal-footer .button-control{
+	border: 1px solid red;
+	padding: 20px;
+}
+.form-wizard .form-control,
+.form-profile .form-group .checkbox,
+.select2-choices,
+.select2-input,
+.bootstrap-tagsinput,
+.selectize-input,
+.selectize-control.single .selectize-input{
+    font: 16px Verdana, Arial, sans-serif;
+    height: 45px;
+    color: #000;
+    font-weight: normal;
+    border-radius: 0;
+    width:100%;
+    border: 1px solid black;
+    padding: 10px;
+    background-image: none;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.selectize-input:after{
+    border:none;/** Remove caret **/
+}
+
+.selectize-input input{
+    font-size:16px;
+}
+
+.selectize-input {
+    font-size: 14px;
+    padding: 10px !important;
+    height: inherit;
+}
+
+.selectize-control.single .selectize-input:after {
+	border-width: 0;
+}
+
+.selectize-control.single .selectize-input.dropdown-active:after {
+	border-width: 0;
+}
+
+.sitting-label {
+	top: -12px;
+}
+
+.form-wizard select.form-control{
+    width:100%;
+    margin:0;
+}
+
+.form-wizard textarea.form-control
+{
+    height: auto;
+}
+
+.form-profile .form-control:-moz-placeholder {
+  color: #878787;
+}
+
+.form-profile .form-control::-moz-placeholder {
+  color: #878787;
+  opacity: 1;
+}
+
+.form-profile .form-control:-ms-input-placeholder {
+  color: #878787;
+}
+
+.form-profile .form-control::-webkit-input-placeholder {
+  color: #878787;
+}
+.form-profile .form-group{
+	margin-bottom: 20px;
+}
+.form-profile .form-group .checkbox{
+	padding: 12px 13px 8px;
+	color: #878787;
+}
+.form-profile .icon-flag-us{
+	margin-top: 13px;
+}
+.btn-primary,
+.btn-success{
+	border: none;
+}
+.btn-primary{
+	background-color: #2993DD;
+}
+.btn-success{
+	background-color: #87CD2F;
+}
+.input-append .col-sm-10{
+	padding-right: 0;
+}
+.input-append input[type='text']{
+	border-radius: 4px 0 0 4px;
+}
+.input-append .btn-success{
+    width: auto;
+    border-radius: 0 4px 4px 0;
+    font-size: 28px;
+    padding-top: 0px;
+    padding-bottom: 4px;
+    line-height: 28px;
+    margin-left: 0;
+    border: 1px solid rgb(39, 151, 30);
+}
+.add-photo,
+.add-photo .add-photo-img{
+	border-radius: 50%;
+}
+.add-photo{
+	margin: 0 auto; 
+	width: 182px;
+	height: 182px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+}
+.add-photo:hover {
+	border-color: #66afe9;
+  	outline: 0;
+  	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 2px 5px rgba(102, 175, 233, 0.6);
+    	    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 2px 5px rgba(102, 175, 233, 0.6);
+}
+.add-photo:hover .btn-upload{
+	background-color: #2993DD;
+}
+
+.add-photo:hover .add-photo-img{
+	border-color: #ccc;
+}
+.add-photo .add-photo-img{
+	display: block;
+	overflow: hidden;
+	margin: 11px auto;
+	width: 160px;
+	height: 160px;
+	border: 2px solid #ddd;
+	background-color: #EEEEEE;
+	
+}
+
+img.profile-round-img{
+	width: 160px;
+}
+
+.add-photo .add-photo-img::before {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	width: 156px;
+	height: 156px;
+	border-radius: 50%;
+	box-shadow:inset 0 0 10px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0 0 10px 2px rgba(0,0,0,0.1);
+	-webkit-box-shadow:inset 0 0 10px 2px rgba(0,0,0,0.1);
+}
+
+.add-photo .btn-upload{
+	position: absolute;
+	padding: 5px 0;
+	width: 130px;
+	margin-top: 75px;
+	margin-left: 25px;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.6);
+	text-align: center;
+}
+.add-photo .btn-upload::before{
+	content: "";
+}
+.add-photo.add-photo-small{
+	width: 90px;
+	height: 90px;
+}
+.add-photo.add-photo-small .add-photo-img,
+.add-photo.add-photo-small .add-photo-img img{
+	width: 80px;
+	height: 80px;
+}
+.add-photo.add-photo-small .add-photo-img{
+	margin: 4px auto;
+}
+.add-photo.add-photo-small .add-photo-img::before {
+	width: 76px;
+	height: 76px;
+}
+.title-profile-name,
+.title-profile-email{
+	margin-left: 10px;
+	width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.title-profile-name{
+	margin-bottom: 5px;
+}
+.title-profile-name{
+	overflow: hidden;
+	
+	height: 26px;
+}
+.truncate {
+  width: 250px;
+  
+}
+.slide-step{
+	display: inline-block;
+	position: relative;
+	width: 110px;
+	margin-top: 15px;
+	left: 50%;
+	margin-left: -55px;
+}
+.slide-step .step{
+	float: left;
+	width: 14px;
+	height: 14px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+.slide-step .step.active{
+	background-color: #67BE1A;
+}
+.icon-arrow,
+.icon-like{
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.icon-arrow{
+	background: url('/images/icon-arrow.png') no-repeat;
+}
+.icon-like{
+	background: url('/images/icon-like.png') no-repeat;
+}
+.icon-flag-us{
+	display: inline-block;
+	width: 24px;
+	height: 19px;
+	margin-left: 5px;
+	background: url('/images/flag-us.png') no-repeat;
+	vertical-align: middle;
+}
+.input-search{
+	background: url('/images/icon-search.png') no-repeat right;
+}

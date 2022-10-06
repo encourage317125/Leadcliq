@@ -1,0 +1,46 @@
+#map {
+	width: 550px;
+	height: 350px;
+	
+}
+#mapContainer {
+    width: 900px;
+	height: 500px;
+    margin-left: auto ;
+    margin-right: auto ;
+	
+}
+#selectsection {
+	width: 550px;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #333;
+	font-size: 14px;
+	text-align: left;
+}
+#selectsection input, select, button {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #333;
+	font-size: 14px;
+	padding: 5px;
+	margin: 0px 5px 5px 5px;
+	border:1px solid #bbb;
+	border-radius: 8px;
+}
+#areapolygon {
+	display: none;
+}
+#areapolygon2 {
+	display: none;
+}
+#areapolygon3 {
+	display: none;
+}
+#areapolygon4 {
+	display: none;
+}
+#layerAreas {
+    display: none;
+}
+#currentArea {
+    display: none;
+}

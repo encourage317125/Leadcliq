@@ -1,0 +1,1 @@
+/Users/sabrinagelbart/Work/leadcliq-platform/app/views/CreditCards/show.blade.php
